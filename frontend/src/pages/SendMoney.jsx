@@ -12,7 +12,7 @@ export const SendMoney = () => {
     const [isSuccess, setIsSuccess] = useState(false);
 
     const handTransaction = async () =>{
-            const response = await axios.post("http://localhost:3000/api/v1/account/transfer",{
+            const response = await axios.post("https://swiftpay-app.onrender.com/api/v1/account/transfer",{
                 to:id,
                 amount
             },{

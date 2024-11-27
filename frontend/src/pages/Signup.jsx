@@ -35,7 +35,7 @@ export const Signup=()=>{
             }} label={"Password"} placeholder={"12345"}></InputBox>
 
             <Button label={"Sign Up"} onClick={async ()=>{
-                    const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
+                    const response = await axios.post("https://swiftpay-app.onrender.com/api/v1/user/signup", {
                     firstName,
                     lastName,
                     username,
